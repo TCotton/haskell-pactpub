@@ -11,7 +11,7 @@ add4 :: Num a => a -> a -> a
 add4 = (+)
 
 data Compass = North | East | South | West
-    deriving (Eq, Ord, Enum)
+    deriving (Eq, Ord, Enum, Show)
 
 instance Show Compass where
     show North = "North"
@@ -19,12 +19,7 @@ instance Show Compass where
     show South = "South"
     show West = "West"
 
---instance Eq Compass where
-    --North == North = True
-
-data Expression = Number Int 
-                | Add Expression Expression 
-                | Subtract Expression Expression 
-                deriving (Eq, Ord, Show)
+instance Eq Compass where
+    North == North = True
 
 main = putStrLn "Hello World"
