@@ -1,6 +1,5 @@
 module Lib
-    ( someFunc,
-    someString
+    ( someFunc
     ) where
 
 someFunc :: IO ()

@@ -32,8 +32,5 @@ calculate (Number x) = x
 calculate (Add x y) = (calculate x) + (calculate y)
 calculate (Subtract x y) = (calculate x) - (calculate y)
 
-newHead [] = error "empry list"
-newHead (x:xs) = x 
-
 
 main = putStrLn "Hello World"
